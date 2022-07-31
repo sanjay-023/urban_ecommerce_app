@@ -1,0 +1,35 @@
+name: ecommerceapp
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.17.3 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  flutter_screenutil: ^5.5.3+2
+  google_fonts: ^3.0.1
+  carousel_slider: ^4.1.1
+  bottom_bar: ^2.0.2
+  font_awesome_flutter: ^10.1.0
+  flutter_rating_stars: ^1.0.3+4
+
+dev_dependencies: 
+  flutter_lints: ^2.0.0
+  lints: 2.0.0
+  flutter_test: 
+    sdk: flutter
+
+flutter: 
+  uses-material-design: true
+
+  assets :
+  - asset/image/googleLogo.png
+  - asset/image/facebooklogo.png
+  - asset/image/bg_1.png
+  - asset/image/bg_2.png
+  - asset/image/Wdress_1.jpg
+
