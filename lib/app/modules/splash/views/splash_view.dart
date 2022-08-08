@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/app/modules/common/common_color.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -8,16 +9,8 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('SplashView'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Text(
-          'SplashView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-    );
+        backgroundColor: CommonColors().bgColor,
+        body: Center(
+            child: Image(image: AssetImage("asset/image/urban_logo.png"))));
   }
 }

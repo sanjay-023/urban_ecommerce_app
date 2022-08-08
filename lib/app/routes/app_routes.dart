@@ -12,6 +12,8 @@ abstract class Routes {
   static const WISHLIST = _Paths.WISHLIST;
   static const BAG = _Paths.BAG;
   static const PROFILE = _Paths.PROFILE;
+  static const FULL = _Paths.FULL;
+  static const DETAILS = _Paths.DETAILS;
 }
 
 abstract class _Paths {
@@ -25,4 +27,6 @@ abstract class _Paths {
   static const WISHLIST = '/wishlist';
   static const BAG = '/bag';
   static const PROFILE = '/profile';
+  static const FULL = '/full';
+  static const DETAILS = '/details';
 }

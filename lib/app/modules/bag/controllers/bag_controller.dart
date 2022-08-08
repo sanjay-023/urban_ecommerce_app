@@ -3,18 +3,22 @@ import 'package:get/get.dart';
 class BagController extends GetxController {
   //TODO: Implement BagController
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
+  List qtyValues = [
+    '1',
+    '2',
+    '3',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+  ];
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  String qtyText = '1';
 
-  @override
-  void onClose() {}
-  void increment() => count.value++;
+  changeQty(value) {
+    qtyText = value;
+    update();
+  }
 }

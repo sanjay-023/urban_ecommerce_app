@@ -61,7 +61,51 @@ class HomeView extends GetView<HomeController> {
                   children: [Productcard(), Productcard(), Productcard()],
                 ),
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 30),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Sale",
+                        style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600,
+                                fontSize: 36.sp)),
+                      ),
+                      Text(
+                        "Exciting offers for you",
+                        style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                color: Color.fromARGB(255, 109, 108, 108),
+                                fontSize: 12.sp)),
+                      )
+                    ],
+                  ),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "View all",
+                        style: GoogleFonts.poppins(
+                            textStyle: TextStyle(color: Colors.grey)),
+                      ))
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [Productcard(), Productcard(), Productcard()],
+                ),
+              ),
+            ),
           ],
         ),
       ),

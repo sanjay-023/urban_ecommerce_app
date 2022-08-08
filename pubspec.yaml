@@ -16,6 +16,10 @@ dependencies:
   bottom_bar: ^2.0.2
   font_awesome_flutter: ^10.1.0
   flutter_rating_stars: ^1.0.3+4
+  flutter_staggered_grid_view: ^0.6.2
+  custom_radio_grouped_button: ^2.1.2+2
+  tip_dialog: ^4.0.0
+  fluttertoast: ^8.0.9
 
 dev_dependencies: 
   flutter_lints: ^2.0.0
@@ -32,4 +36,6 @@ flutter:
   - asset/image/bg_1.png
   - asset/image/bg_2.png
   - asset/image/Wdress_1.jpg
+  - asset/image/urban_logo.png
+  - asset/image/
 
