@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/app/modules/bag/views/bag_view.dart';
 import 'package:ecommerceapp/app/modules/common/common_color.dart';
 import 'package:ecommerceapp/app/modules/details/controllers/details_controller.dart';
 import 'package:flutter/material.dart';
@@ -16,27 +17,34 @@ class Bottomcart extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          GetBuilder<DetailsController>(builder: (controller) {
+            return ElevatedButton(
+                onPressed: () {
+                  detailController.changeBagButton();
+                  detailController.buttonValue
+                      ? Get.to(BagView())
+                      : Fluttertoast.showToast(msg: "Added to Bag");
+                },
+                child: Row(
+                  children: [
+                    Icon(Icons.shopping_bag, color: Colors.white),
+                    SizedBox(
+                      width: 5.w,
+                    ),
+                    Text(detailController.buttonValue
+                        ? "GOTO BAG"
+                        : "ADD TO BAG")
+                  ],
+                ),
+                style: ElevatedButton.styleFrom(
+                    primary: CommonColors().buttonColor,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.r)),
+                    minimumSize: Size(200.w, 50.h)));
+          }),
           ElevatedButton(
               onPressed: () {
-                Fluttertoast.showToast(msg: "Added to Bag");
-              },
-              child: Row(
-                children: [
-                  Icon(Icons.shopping_bag, color: Colors.white),
-                  SizedBox(
-                    width: 5.w,
-                  ),
-                  Text("ADD TO BAG")
-                ],
-              ),
-              style: ElevatedButton.styleFrom(
-                  primary: CommonColors().buttonColor,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.r)),
-                  minimumSize: Size(200.w, 50.h))),
-          ElevatedButton(
-              onPressed: () {
-                Fluttertoast.showToast(msg: "Added to wishlist");
+                Fluttertoast.showToast(msg: "Added to Wishlist");
               },
               child: Row(
                 children: [

@@ -25,7 +25,7 @@ class ProductTitle extends StatelessWidget {
                             fontWeight: FontWeight.w600)),
                   ),
                   Text(
-                    "Night Dress",
+                    "Evening Dress",
                     style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                             color: Colors.white,

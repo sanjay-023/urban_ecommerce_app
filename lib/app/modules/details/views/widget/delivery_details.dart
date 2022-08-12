@@ -39,7 +39,9 @@ class DeliveryDetails extends StatelessWidget {
                   children: [
                     Icon(Icons.add, color: Colors.white),
                     TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          //Get.to(AddDeliveryAddress());
+                        },
                         child: Text(
                           "Add Delivery Address",
                           style: GoogleFonts.poppins(

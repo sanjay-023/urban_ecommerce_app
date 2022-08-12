@@ -3,6 +3,8 @@ import 'package:ecommerceapp/app/modules/common/common_color.dart';
 import 'package:ecommerceapp/app/modules/details/views/widget/bottom_cart.dart';
 import 'package:ecommerceapp/app/modules/details/views/widget/delivery_details.dart';
 import 'package:ecommerceapp/app/modules/details/views/widget/product_title.dart';
+import 'package:ecommerceapp/app/modules/details/views/widget/rating_review.dart';
+import 'package:ecommerceapp/app/modules/details/views/widget/similar.dart';
 import 'package:ecommerceapp/app/modules/details/views/widget/size_select.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -51,7 +53,15 @@ class DetailsView extends GetView<DetailsController> {
               SizedBox(
                 height: 15.h,
               ),
-              DeliveryDetails()
+              DeliveryDetails(),
+              SizedBox(
+                height: 15.h,
+              ),
+              ViewSimilar(),
+              SizedBox(
+                height: 15.h,
+              ),
+              ReviewRating()
             ],
           ),
         ));
